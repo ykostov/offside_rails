@@ -1,6 +1,6 @@
 <%= form_tag search_searches_path, :method => :get do %>
   <fieldset>
-    <h3>Search for an article</h3>
+    <h3>Търси заглавие</h3>
     <div class="input">
       <%= label_tag :search, "Search terms" %>
       <%= text_field_tag :search, params[:search] %>
@@ -8,7 +8,7 @@
       <%# <%= check_box_tag :use_highlights, '1', params[:use_highlights] %>
       <%# <%= label :use_highlights, 'HTML Highlight results' %>
       <br><br>
-      <%= submit_tag "Search" %>
+      <%= submit_tag "Търси" %>
     </div>
   </fieldset>
 <% end %>

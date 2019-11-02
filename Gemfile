@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '5.2.3'
 gem 'bootsnap'
 gem 'pg', '~> 0.15'
-gem 'mysql2'
+
 gem 'foreman'
 gem 'bootstrap', '~> 4.3.0'
 gem 'sassc-rails'

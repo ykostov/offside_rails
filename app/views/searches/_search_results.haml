@@ -1,7 +1,7 @@
 .container
-  %h5= "Search results: #{@articles.count + @content.count}"
+  %h5= "Резултати от търсенето: #{@articles.count + @content.count}"
 
-  %p= "(content: #{@content.count})"
+  %p= "(Съдържание: #{@content.count})"
   - @content.each do |content|
     %p= link_to "#{content.title}, / #{l(content.created_at.to_date)}", content
     %hr
@@ -10,11 +10,11 @@
     previous_label: '<- Previous', next_label: 'Next ->',
     renderer: WillPaginate::ActionView::BootstrapLinkRenderer
 
-  %p= "(titles: #{@articles.count})"
+  %p= "(Заглавия: #{@articles.count})"
   - @articles.each do |article|
     %p= link_to "#{article.title}, / #{l(article.created_at.to_date)}", article
     %hr
   %hr
   = will_paginate @articles, page_links: false,
-    previous_label: '<- Previous', next_label: 'Next ->',
+    previous_label: '<- Назад', next_label: 'Напред ->',
     renderer: WillPaginate::ActionView::BootstrapLinkRenderer

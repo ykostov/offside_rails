@@ -1,12 +1,13 @@
 .container
-  %nav.navbar.navbar-expand-xs.fixed-top.navbar-dark.nav-color
+  %nav.navbar.navbar-expand-xs.fixed-top.navbar-dark.nav-color.flex-navbar
     %button.navbar-toggler.order-first.btn-outline.btn-white{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavAltMarkup", "data-toggle" => "collapse", :type => "button"}
       %i.fa.fa-bars.btn-white
     = link_to root_path, class: 'navbar-brand mx-auto' do
       .logobox
-        = ENV['brand_row1']
-        %br
-        = ENV['brand_row2']
+
+      %img{:alt => "OFFSIDE24.net", :src => "offside2.png", :style => "width:400px;height:50px;"}/
+
+
     %span.navbar-text
       =link_to searches_path, class: 'btn btn-outline-default navbar-btn btn-white' do
         %i.fa.fa-search
@@ -18,4 +19,3 @@
         = render 'layouts/nav_links'
         - if admin_signed_in?
           = link_to 'Admin log out ->', destroy_admin_session_path, method: :delete, class: 'navbar-item'
-
