@@ -3,6 +3,7 @@ set :deploy_user, 'offside24'
 
 set :repo_url, 'git@github.com:ykostov/offside_rails.git'
 set :pty, false
+set :use_sudo, false
 set :init_system, :systemd
 # setup rbenv.
 set :rbenv_type, :system
