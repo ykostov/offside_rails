@@ -1,7 +1,7 @@
-set :application, 'sedmodnev'
-set :deploy_user, 'deployer'
+set :application, 'offside_rails'
+set :deploy_user, 'offside24'
 
-set :repo_url, 'git@github.com:rmilushev/sedmodnev.git'
+set :repo_url, 'git@github.com:ykostov/offside_rails.git'
 set :pty, false
 set :init_system, :systemd
 # setup rbenv.
