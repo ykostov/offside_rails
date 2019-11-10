@@ -5,15 +5,15 @@ default: &default
 
 development:
   <<: *default
-  database: sedmodnev_development
+  database: offside_development
 
 test:
   <<: *default
-  database: sedmodnev_test
+  database: offside_test
 
 
 production:
   <<: *default
-  database: sedmodnev_production
-  username: sedem
-  password: <%= ENV['SEDMODNEV_DATABASE_PASSWORD'] %>
+  database: offside_production
+  username: offside24
+  password: <%= ENV['OFFSIDE_DATABASE_PASSWORD'] %>
