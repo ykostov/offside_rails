@@ -3,11 +3,10 @@ set :deploy_user, 'offside24'
 
 set :repo_url, 'git@github.com:ykostov/offside_rails.git'
 set :pty, false
-set :use_sudo, false
 set :init_system, :systemd
 # setup rbenv.
 set :rbenv_type, :system
-set :rbenv_ruby, '2.5.0'
+set :rbenv_ruby, '2.6.5'
 set :rbenv_path, '~/.rbenv'
 set :default_env, path: '~/.rbenv/shims:~/.rbenv/bin:$PATH'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
