@@ -1,5 +1,5 @@
 set :application, 'offside_rails'
-set :deploy_user, 'offside24'
+set :deploy_user, 'deployer'
 
 set :repo_url, 'git@github.com:ykostov/offside_rails.git'
 set :pty, false
