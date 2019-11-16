@@ -4,7 +4,8 @@
   %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= content_for?(:title) ? yield(:title) : "Offside24.net - Футболен сайт от фенове, за фенове"
-    %meta{name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Burgas-reporter.com'}"}
+    %meta{name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Offside24.net'}"}
+    %script{:async => "", "data-ad-client" => "ca-pub-3883939676510150", :src => "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
     = yield :head
     = csrf_meta_tags
     = csp_meta_tag
