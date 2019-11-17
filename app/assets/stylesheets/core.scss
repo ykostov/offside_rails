@@ -686,3 +686,18 @@ hr {
 .nav-color {
   background-color: rgba(00, 134, 204, 0.6);
 }
+.navbar-brand {
+  color: #00283D;
+  font-family: 'Righteous', cursive;
+  font-size: 2.6rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  word-break: break-all;
+  &:hover {
+    color: #007dbf;
+    text-shadow: 1px 1px 2px #00283d;
+  }
+  @media only screen and (max-width : 500px) {
+    font-size: 1.3rem;
+  }
+}

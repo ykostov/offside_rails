@@ -4,10 +4,7 @@
       %i.fa.fa-bars.btn-white
     = link_to root_path, class: 'navbar-brand mx-auto' do
       .logobox
-
-      %img{:alt => "OFFSIDE24.net", :src => "offside2.png", :style => "width:400px;height:50px;"}/
-
-
+        = ENV['brand_row1']
     %span.navbar-text
       =link_to searches_path, class: 'btn btn-outline-default navbar-btn btn-white' do
         %i.fa.fa-search
