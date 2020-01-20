@@ -3,7 +3,7 @@
 
   %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= content_for?(:title) ? yield(:title) : "Offside24.net - Футболен сайт от фенове, за фенове"
+    %title= content_for?(:title) ? yield(:title) : "Offside24.net - Спортни новини от Бълграия и Свят"
     %meta{name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Offside24.net'}"}
     %script{:async => "", "data-ad-client" => "ca-pub-6893677922065588", :src => "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
     = yield :head
