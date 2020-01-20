@@ -22,3 +22,4 @@
 //= require jquery.easy-autocomplete.min
 //= require core
 //= require_tree .
+//= require cookies_eu
