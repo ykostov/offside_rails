@@ -4,6 +4,7 @@ gem 'rails', '5.2.3'
 gem 'bootsnap'
 gem 'pg', '~> 0.15'
 
+gem 'cookies_eu'
 gem 'foreman'
 gem 'bootstrap', '~> 4.3.0'
 gem 'sassc-rails'
@@ -51,11 +52,11 @@ group :test do
 end
 group :development do
   gem 'web-console', '~> 2.0'
-  gem 'capistrano', "~> 3.10", require: false
+  gem 'capistrano'
   gem 'capistrano-bundler'
-  gem 'capistrano-rails', '~> 1.4', require: false
+  gem 'capistrano-rails', '~> 1.1.0'
   gem 'capistrano-rails-console'
   gem 'capistrano-rbenv'
   # gem "capistrano-sidekiq"
-  gem 'capistrano3-puma'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end

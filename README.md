@@ -1,1 +1,1 @@
-# Offside on Rails
+# Sedmodnev - single point of truth
