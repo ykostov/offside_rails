@@ -5,13 +5,12 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= content_for?(:title) ? yield(:title) : "Offside24.net - Спортни новини от Бълграия и Свят"
     %meta{name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Offside24.net'}"}
-    %script{:async => "", "data-ad-client" => "ca-pub-6893677922065588", :src => "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
     = yield :head
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-    = render 'layouts/tag_manager_head'
+    -# = render 'layouts/tag_manager_head'
     = render 'layouts/fonts'
     = render 'layouts/pinterest'
     = render 'layouts/ga_async'
@@ -24,6 +23,6 @@
     .banners-top
       -# = render 'layouts/mainbanner' if current_page?(root_path)
     .container
-    
+      = render 'layouts/google_top'
     = yield
     = render 'layouts/footer'
