@@ -13,9 +13,9 @@
     -# = render 'layouts/tag_manager_head'
     = render 'layouts/fonts'
     = render 'layouts/pinterest'
-    = render 'layouts/ga_async'
+    -# = render 'layouts/ga_async'
   %body
-    = render 'layouts/tag_manager_body'
+    -# = render 'layouts/tag_manager_body'
     = render 'layouts/nav_bar'
     .space30
     = render 'layouts/messages'
@@ -23,6 +23,6 @@
     .banners-top
       -# = render 'layouts/mainbanner' if current_page?(root_path)
     .container
-      = render 'layouts/google_top'
+      -# = render 'layouts/google_top'
     = yield
     = render 'layouts/footer'
