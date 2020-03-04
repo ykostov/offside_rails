@@ -4,7 +4,7 @@
   = render 'social_sidebar'
   .cont-body
     .flex-center
-      -# = render 'layouts/mainbanner'
+      = render 'layouts/mainbanner'
       %div{itemscope: "", itemtype: "http://schema.org/NewsArticle"}
         %span.title-intro
           = @article.tag_list.first
