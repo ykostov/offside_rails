@@ -1,10 +1,10 @@
 = render 'og_content'
-= render 'layouts/new_adsense'
+-# = render 'layouts/new_adsense'
 .show-page
   = render 'social_sidebar'
   .cont-body
     .flex-center
-      = render 'layouts/mainbanner'
+      -# = render 'layouts/mainbanner'
       %div{itemscope: "", itemtype: "http://schema.org/NewsArticle"}
         %span.title-intro
           = @article.tag_list.first
