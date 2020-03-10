@@ -1,5 +1,5 @@
 = render 'og_content'
--# = render 'layouts/new_adsense'
+= render 'layouts/new_adsense'
 .show-page
   = render 'social_sidebar'
   .cont-body
@@ -20,6 +20,6 @@
       - if admin_signed_in?
         = link_to t(:edit_article), edit_author_article_path(@article), class: 'btn btn-warning'
   .show-right-adv
-    -# = render 'layouts/right_adsense'
--# = render 'layouts/adsense'
+    = render 'layouts/right_adsense'
+= render 'layouts/adsense'
 = render 'articles/more_articles'
