@@ -23,7 +23,4 @@
 
   header("Location: contact us.html");
 
-
-
-
 ?>
