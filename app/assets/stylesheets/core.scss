@@ -167,7 +167,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   height: 50px;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px black;
   align-items: center;
   justify-content: center;
   h4 {
@@ -427,11 +427,11 @@ hr {
 }
 
 .index-item {
-  background: white;
+  background: &bg;
   border-bottom: 1px solid #ccc;
   border-radius: 7px;
   padding: .4em;
-  box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+  box-shadow: 2px 0 2px 0 rgba(192, 151, 48, 0.69), 1px 0 2px 0 rgba(164, 139, 76, 0.66), 0 1px 1px 0 rgba(0,0,0,0.24);
   transform: translate3d(0, 0, 0);
   @media only screen and (max-width : 600px) {
     border-top: 1px solid #ccc;
@@ -618,7 +618,7 @@ hr {
 }
 
 .article-form {
-  margin-top: 6rem;
+  margin-top: 18rem;
 }
 
 .search-form {
@@ -679,12 +679,12 @@ hr {
 }
 
 .btn-white {
-  color: yellow;
-  border-color: yellow;
+  color: red;
+  border-color: red;
 }
 
 .nav-color {
-  background-color: rgba(255, 10, 10, 0.45);
+  background-color: rgba(192, 151, 48, 0.69);
 }
 
 .navbar-brand {
