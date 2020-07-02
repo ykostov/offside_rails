@@ -427,7 +427,7 @@ hr {
 }
 
 .index-item {
-  background: &bg;
+  background: $bg;
   border-bottom: 1px solid #ccc;
   border-radius: 7px;
   padding: .4em;
