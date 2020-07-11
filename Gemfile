@@ -4,6 +4,10 @@ gem 'rails', '5.2.3'
 gem 'bootsnap'
 gem 'pg', '~> 0.15'
 
+
+
+
+#gem 'cookieconsent'
 gem 'cookies_eu'
 gem 'foreman'
 gem 'bootstrap', '~> 4.3.0'
