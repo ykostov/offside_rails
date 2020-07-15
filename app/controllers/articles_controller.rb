@@ -38,6 +38,7 @@ class ArticlesController < ApplicationController
 
   private
 
+
   def calc(index)
     return index if index < @tags.length - 1
     -1
