@@ -2,9 +2,9 @@ class ArticlesController < ApplicationController
   def index
     if params[:tag]
       @tag = ActsAsTaggableOn::Tag.find(params[:tag])
-      @articles = Article.tagged_with(@tag.name).desc_order.paginate(page: params[:page], per_page: 15)
+      @articles = Article.tagged_with(@tag.name).desc_order.paginate(page: params[:page], per_page: 17)
     else
-      @articles = Article.importance.desc_order.paginate(page: params[:page], per_page: 15)
+      @articles = Article.importance.desc_order.paginate(page: params[:page], per_page: 17)
     end
   end
 
