@@ -354,9 +354,9 @@ trix-editor .attachment .remove {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  @media only screen and (max-width : 900px) {
-  display: none;
-  }
+  // @media only screen and (max-width : 900px) {
+  // display: none;
+  // }
 }
 
 .blue {

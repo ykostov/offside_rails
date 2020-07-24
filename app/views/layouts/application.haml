@@ -21,9 +21,12 @@
     = render 'layouts/messages'
     = render 'layouts/fb_comments'
     .banners-top
-      -# = render 'layouts/mainbanner' if current_page?(root_path)
+      = render 'layouts/mainbanner'
     .container
       = render 'layouts/google_top'
     = yield
+    .container
+      = render 'layouts/bmainbanner' if current_page?(root_path)
+
     = render 'layouts/footer'
     = render 'layouts/cookies'
