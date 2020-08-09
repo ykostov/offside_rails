@@ -1,5 +1,5 @@
 body {
-  background: $bg;
+  background: #f6f6f6;
   padding-top: 60px;
 }
 
@@ -427,7 +427,7 @@ hr {
 }
 
 .index-item {
-  background: $bg;
+  background: #f6f6f6;;
   border-bottom: 1px solid #ccc;
   border-radius: 7px;
   padding: .4em;
@@ -685,6 +685,7 @@ hr {
 
 .nav-color {
   background-color: rgba(192, 151, 48, 0.69);
+  // background-image: url(poi.jpg);
 }
 
 .navbar-brand {
