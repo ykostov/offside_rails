@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'ads.txt', to: redirect('/ads.txt')
   resources :tags, except: :show
   get 'tags/:tag', to: 'articles#index'
   get '/search', to: 'searches#search'
