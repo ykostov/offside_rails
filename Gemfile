@@ -6,7 +6,7 @@ gem 'pg', '~> 0.15'
 
 
 
-
+gem 'meta-tags'
 #gem 'cookieconsent'
 gem 'cookies_eu'
 gem 'foreman'
