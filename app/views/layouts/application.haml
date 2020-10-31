@@ -3,7 +3,8 @@
 
   %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= content_for?(:title) ? yield(:title) : "Offside24.net - Спортни новини от България и Свят | Новини от света на биатлона и тениса"
+    %title= content_for?(:title) ? yield(:title) : "Offside24.net - Спортни новини от България и Свят | Тенис на маса, биатлон, Тенис, новини, ittf"
+    = display_meta_tags site: 'My website'
     %meta{name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Offside24.net'}"}
     = yield :head
     = csrf_meta_tags
