@@ -5,7 +5,7 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     -# %title= content_for?(:title) ? yield(:title) : "Offside24.net - Спортни новини от България и Свят | Тенис на маса, биатлон, Тенис, новини, ittf"
     = display_meta_tags site: 'Offside24.net - Спортни новини от България и Свят'
-    %meta{name: "description", content: "#{content_for?(:description) ? yield(:description) : 'Offside24.net'}"}
+    %meta{name: "Новини тенис на маса, тенис на корт, биатлон новини, тенис на маса, tenis na masa novini, tennis na masa novini, ittf novini, тенис на маса България, биатлон новини, биатлон България, bitlon, offside24.net, дооясае24хеш, офсайд24 нет ", content: "#{content_for?(:description) ? yield(:description) : 'keywords'}"}
     = yield :head
     = csrf_meta_tags
     = csp_meta_tag
