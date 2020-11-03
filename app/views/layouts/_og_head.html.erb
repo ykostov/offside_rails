@@ -2,7 +2,7 @@
   $(document).on('ready page:change', function() {
     $("meta[property='fb\\:app_id']").attr("content", "<%= ENV["FACEBOOK_APP_ID"] %>");
     $("meta[name='twitter\\:card']").attr("content", "summary_large_image");
-    $("meta[name='twitter\\:site']").attr("content", "@BurgasReporter");
+    $("meta[name='twitter\\:site']").attr("content", "qskatak");
     $("meta[name='og\\:type']").attr("content", "article");
     $("meta[name='twitter\\:title']").attr("content", "<%= @article.title %>");
     $("meta[name='twitter\\:description']").attr("content", "<%= strip_tags(@article.content).truncate_words(20, omission: '  ... ') %>");

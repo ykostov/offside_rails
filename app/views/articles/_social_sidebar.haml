@@ -1,7 +1,7 @@
 .share-sidebar
   %ul.share-listing
     %li.listing-fb
-      = link_to "https://twitter.com/intent/tweet?text=#{@article.title}&url=#{@article.og_fullpath}/?mbid=social_twitter_onsiteshare&via=BurgasReporter", target: :_blank do
+      = link_to "https://twitter.com/intent/tweet?text=#{@article.title}&url=#{@article.og_fullpath}/?mbid=social_twitter_onsiteshare&via=qskatak", target: :_blank do
         = render 'layouts/tw_left'
     %li.listing-fb
       = link_to "https://www.facebook.com/sharer/sharer.php?u=#{@article.og_fullpath}", target: '_blank' do
