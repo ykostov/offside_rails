@@ -62,5 +62,6 @@ group :development do
   gem 'capistrano-rails-console'
   gem 'capistrano-rbenv'
   # gem "capistrano-sidekiq"
-  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  # gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  gem 'capistrano3-puma'
 end
